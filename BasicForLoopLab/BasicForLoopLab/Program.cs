@@ -3,11 +3,11 @@ using System.Diagnostics.CodeAnalysis;
 
 
 bool playAgain = false;
-int sum = 0;
-int i = 0;
 
 do
-{   
+{
+    int sum = 0;
+    int i = 0;
     Console.Write("Enter a number: ");
     int userNumber = int.Parse(Console.ReadLine());
     for (i = 0; i <= userNumber; i++)
@@ -22,5 +22,5 @@ do
     else playAgain = false;
 
 } while (playAgain == true);
-
+Console.WriteLine("Goodbye!");
 
